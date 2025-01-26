@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEEP BLUE Support System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        .faq {
+            margin-bottom: 20px;
+        }
+
+        .faq h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .faq-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #f0f0f0;
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .faq-answer {
+            padding: 15px;
+            display: none;
+            background: #fff;
+        }
+
+        .faq-answer.visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>DEEP BLUE Support System</h1>
+        </div>
+
+        <div class="section">
+            <div class="faq">
+                <h2>Predefined Questions</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">I have a question</div>
+                    <div class="faq-answer">Yes, tell me.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Tell me about FleetOptimyze and its services</div>
+                    <div class="faq-answer">Our transportation service ensures efficient fleet route optimization, enabling drivers to reach their destinations on time using Google GPS. The delivery route is tracked in real time, providing updates to both customers and the company. Any delays or prolonged stops can be identified promptly, ensuring smooth and transparent operations.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Tell me how logistics work</div>
+                    <div class="faq-answer">Logistics refers to the overall process of managing how resources are acquired, stored, and transported to their final destination. Logistics management involves identifying prospective distributors and suppliers and determining their effectiveness and accessibility.</div>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h2>Basic Questions</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is the type of commodity or cargo being shipped?</div>
+                    <div class="faq-answer">This could vary widely depending on the shipment, e.g., electronics, perishable goods, machinery, textiles, or raw materials. The commodity must comply with international shipping and safety regulations.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is the HS code for the commodity?</div>
+                    <div class="faq-answer">The Harmonized System (HS) code depends on the specific commodity. For example, electronic components might have an HS code starting with "85." You can consult the official HS code database or your local customs authority for the exact code.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is the origin and destination country?</div>
+                    <div class="faq-answer">Example: The shipment originates from India and is destined for the United States.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is the size of the cartons or boxes?</div>
+                    <div class="faq-answer">Example: Each box measures 50x50x50 cm.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is the weight and volume of the shipment?</div>
+                    <div class="faq-answer">Example: The shipment weighs 500 kg with a total volume of 2 cubic meters.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is the preferred mode of freight shipping (air, sea, or land)?</div>
+                    <div class="faq-answer">Example: Air freight for faster delivery, or sea freight for cost-effectiveness on bulk shipments.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you need port-to-port or door-to-door delivery?</div>
+                    <div class="faq-answer">Example: Door-to-door delivery for convenience and end-to-end logistics.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What type of freight is it (LTL, FTL, or parcel)?</div>
+                    <div class="faq-answer">Example: Less than Truckload (LTL) for small shipments, Full Truckload (FTL) for larger volumes, or parcel for smaller individual packages.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Do you have the required licenses to import or export the goods?</div>
+                    <div class="faq-answer">Example: Yes, we have the necessary export license issued by [country-specific authority] and an import license for the destination country.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What is the transit time, and how is it calculated?</div>
+                    <div class="faq-answer">Example: Transit time is estimated at 10-12 days by sea freight. It is calculated based on the distance between the origin and destination ports, type of vessel, and customs clearance time.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">What documents are needed for international shipping?</div>
+                    <div class="faq-answer">Commonly required documents include:
+                        <ul>
+                            <li>Commercial invoice</li>
+                            <li>Packing list</li>
+                            <li>Bill of lading (BOL)</li>
+                            <li>Certificate of origin</li>
+                            <li>Import/export licenses</li>
+                            <li>Insurance certificate</li>
+                            <li>Customs declaration form</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Are duties and taxes included, and how are they calculated?</div>
+                    <div class="faq-answer">Example: Duties and taxes are not included and are calculated based on the shipment's declared value, HS code, and specific country tariffs. These are typically paid by the importer unless otherwise agreed.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('visible');
+            });
+        });
+    </script>
+</body>
+</html>
